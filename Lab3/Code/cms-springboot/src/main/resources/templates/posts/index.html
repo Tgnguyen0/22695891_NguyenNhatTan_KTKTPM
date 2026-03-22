@@ -1,0 +1,7 @@
+<h1>Danh sách bài viết</h1>
+<a href="/posts/create">Tạo bài viết</a>
+
+<div th:each="post : ${posts}">
+    <h3 th:text="${post.title}"></h3>
+    <p th:text="${post.content}"></p>
+</div>

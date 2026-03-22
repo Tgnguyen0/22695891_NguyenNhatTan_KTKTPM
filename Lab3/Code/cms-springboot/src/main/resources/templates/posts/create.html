@@ -1,0 +1,9 @@
+<h1>Tạo bài viết</h1>
+
+<form action="/posts/create" method="post" th:object="${post}">
+    <input type="text" th:field="*{title}" placeholder="Tiêu đề"/>
+    <br><br>
+    <textarea th:field="*{content}" placeholder="Nội dung"></textarea>
+    <br><br>
+    <button type="submit">Tạo</button>
+</form>
